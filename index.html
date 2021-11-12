@@ -87,46 +87,35 @@
         </div>
       </div>
     </nav>
-
+    <nav class="nav bg-light py-3" aria-label="breadcrumb">
+      <div class="container-lg">
+        <ol class="breadcrumb m-0">
+          <li class="breadcrumb-item active" aria-current="page">Portada</li>
+        </ol>
+      </div>
+    </nav>
     <div class="container-lg">
       <div class="row">
-        <div class="col">
-          <!-- Nav para breadcrumb-->
-          <nav class="nav p-3" aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item active" aria-current="page">
-                Portada
-              </li>
-            </ol>
-          </nav>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 col-lg-2">
-          <!-- Nav con enlaces a las distintas secciones de la web -->
+        <!-- Nav con enlaces a las distintas secciones de la web -->
+        <div class="col-12 col-lg-2 mt-3 g-0">
           <ul class="nav flex-lg-column">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Población</a>
+            <li class="nav-item pe-3">
+              <a class="nav-link" href="#poblacion">Población</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Menú</a>
+            <li class="nav-item pe-3">
+              <a class="nav-link" href="#menu">Menú</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Precios</a>
+            <li class="nav-item pe-3">
+              <a class="nav-link" href="#price">Precios</a>
             </li>
           </ul>
         </div>
-        <div class="col col-xs-12 col-lg-10">
+        <div class="col-12 col-lg-10 mt-lg-3">
           <!-- Apartado de poblaciónes-->
-
-          <div class="row">
-            <div class="col">
-              <h3>Poblacón por provinicas</h3>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-12 col-lg-6">
-              <h4>Santa Cruz de Tenerife</h4>
+          <h4 id="poblacion">Poblacón por provinicas</h4>
+          <div class="row mb-3">
+            <div class="col-12 col-lg-6 mb-3">
+              <h5>Santa Cruz de Tenerife</h5>
               <ul class="list-group">
                 <li
                   class="
@@ -166,32 +155,52 @@
                 </li>
               </ul>
             </div>
-            <div class="col-xs-12 col-lg-6">
-              <h4>Las Palmas de Gran Canaria</h4>
+            <div class="col-12 col-lg-6 mb-3">
+              <h4>Las Palmas</h4>
               <div class="btn-group-vertical btn-group-lg d-flex" role="group">
                 <a
                   href="#"
-                  class="btn btn-outline-dark d-flex justify-content-between"
+                  class="
+                    btn btn-outline-dark
+                    text-muted
+                    d-flex
+                    justify-content-between
+                  "
                   >Gran Canaria
                   <span class="badge rounded-pill bg-info">870.595</span></a
                 >
                 <a
                   href="#"
-                  class="btn btn-outline-dark d-flex justify-content-between"
+                  class="
+                    btn btn-outline-dark btn-lg
+                    text-muted
+                    d-flex
+                    justify-content-between
+                  "
                   >Lanzarote<span class="badge rounded-pill bg-info"
                     >154.530</span
                   ></a
                 >
                 <a
                   href="#"
-                  class="btn btn-outline-dark d-flex justify-content-between"
+                  class="
+                    btn btn-outline-dark btn-lg
+                    text-muted
+                    d-flex
+                    justify-content-between
+                  "
                   >Fuerteventura<span class="badge rounded-pill bg-info"
                     >126.227</span
                   ></a
                 >
                 <a
                   href="#"
-                  class="btn btn-outline-dark d-flex justify-content-between"
+                  class="
+                    btn btn-outline-dark btn-lg
+                    text-muted
+                    d-flex
+                    justify-content-between
+                  "
                   >La Graciosa<span class="badge rounded-pill bg-info"
                     >734</span
                   ></a
@@ -199,53 +208,96 @@
               </div>
             </div>
           </div>
-
           <!-- Apartado de Gastronomía-->
-
+          <h2 class="pt-3">Gastronomía</h2>
+          <h3 id="menu">Menú</h3>
           <div class="row">
-            <div class="col">
-              <h2>Gastronomía</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <h3>Menu</h3>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4">
               <h3>Primeros</h3>
               <div class="list-group">
-                <a href="#" class="list-group-item">Ensalada Tropical</a
-                ><a href="#" class="list-group-item">Escaldón</a
-                ><a href="#" class="list-group-item">Queso Asado</a
-                ><a href="#" class="list-group-item">Croquetas</a>
+                <a href="#" class="list-group-item list-group-item-action"
+                  >Ensalada Tropical</a
+                ><a href="#" class="list-group-item list-group-item-action"
+                  >Escaldón</a
+                ><a href="#" class="list-group-item list-group-item-action"
+                  >Queso Asado</a
+                ><a href="#" class="list-group-item list-group-item-action"
+                  >Croquetas</a
+                >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4">
               <h3>Segundos</h3>
               <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-primary"
+                <a
+                  href="#"
+                  class="
+                    list-group-item
+                    list-group-item-primary
+                    list-group-item-action
+                  "
                   >Carne Fiesta</a
-                ><a href="#" class="list-group-item list-group-item-primary"
+                ><a
+                  href="#"
+                  class="
+                    list-group-item
+                    list-group-item-primary
+                    list-group-item-action
+                  "
                   >Pollo Asado</a
-                ><a href="#" class="list-group-item list-group-item-primary"
+                ><a
+                  href="#"
+                  class="
+                    list-group-item
+                    list-group-item-primary
+                    list-group-item-action
+                  "
                   >Garbanzas</a
-                ><a href="#" class="list-group-item list-group-item-primary"
+                ><a
+                  href="#"
+                  class="
+                    list-group-item
+                    list-group-item-primary
+                    list-group-item-action
+                  "
                   >Potaje Berros</a
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-4">
+            <div class="col-12 col-sm-12 col-md-4">
               <h3>Postres</h3>
               <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-warning"
+                <a
+                  href="#"
+                  class="
+                    list-group-item
+                    list-group-item-warning
+                    list-group-item-action
+                  "
                   >Polvito Uruguayo</a
-                ><a href="#" class="list-group-item list-group-item-warning"
+                ><a
+                  href="#"
+                  class="
+                    list-group-item
+                    list-group-item-warning
+                    list-group-item-action
+                  "
                   >Principe Alberto</a
-                ><a href="#" class="list-group-item list-group-item-warning"
+                ><a
+                  href="#"
+                  class="
+                    list-group-item
+                    list-group-item-warning
+                    list-group-item-action
+                  "
                   >Frangoyo</a
-                ><a href="#" class="list-group-item list-group-item-warning"
+                ><a
+                  href="#"
+                  class="
+                    list-group-item
+                    list-group-item-warning
+                    list-group-item-action
+                  "
                   >Quesillo</a
                 >
               </div>
@@ -254,11 +306,8 @@
 
           <!-- Apartado de Precios-->
 
-          <div class="row">
-            <div class="col">
-              <h3>Precios</h3>
-            </div>
-          </div>
+          <h3 id="price">Precios</h3>
+
           <div class="row">
             <!-- Precios de primeros -->
             <div class="col-12">
@@ -360,19 +409,19 @@
                     <th scope="row">2</th>
                     <td>Principe Alberto</td>
                     <td>Huevo, leche y almendras</td>
-                    <td class="text-center">3€</td>
+                    <td>3€</td>
                   </tr>
                   <tr>
                     <th scope="row">3</th>
                     <td>Frangoyo</td>
                     <td>Huevo, leche y caramelo</td>
-                    <td class="text-center">2.75€</td>
+                    <td>2.75€</td>
                   </tr>
                   <tr>
                     <th scope="row">4</th>
                     <td>Quesillo</td>
                     <td>Huevos, leche, azucar</td>
-                    <td class="text-center">3€</td>
+                    <td>3€</td>
                   </tr>
                 </tbody>
               </table>
@@ -380,8 +429,6 @@
           </div>
         </div>
       </div>
-
-      <!--  Area pricipal -->
     </div>
 
     <script

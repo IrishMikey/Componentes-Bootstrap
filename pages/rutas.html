@@ -14,7 +14,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
+      <div class="container-lg">
         <a class="navbar-brand"
           ><img
             src="/img/pdc-logo.png"
@@ -38,8 +38,10 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav me-auto mb-2 mb-lg-0">
             <a class="nav-link" href="../index.html">Portada</a>
-            <a class="nav-link " href="./deportes.html">Deportes</a>
-            <a class="nav-link active" aria-current="page" href="./rutas.html">Rutas</a>
+            <a class="nav-link" href="./deportes.html">Deportes</a>
+            <a class="nav-link active" aria-current="page" href="./rutas.html"
+              >Rutas</a
+            >
             <a class="nav-link" href="./contacto.html">Contacto</a>
             <a href="#" class="nav-link disabled">
               <svg
@@ -86,18 +88,19 @@
     </nav>
     <div class="container-lg">
       <!-- Breadcrumb-->
-      <div class="row">
-        <div class="col">
-          <nav class="nav p-3" aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item">
-                <a href="../index.html">Portada</a>
-              </li>
-              <li class="breadcrumb-item active" aria-current="page">Rutas</li>
-            </ol>
-          </nav>
-        </div>
-      </div>
+
+      <nav
+        class="pt-3"
+        style="--bs-breadcrumb-divider: '>'"
+        aria-label="breadcrumb"
+      >
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="../index.html">Portada</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Rutas</li>
+        </ol>
+      </nav>
 
       <div class="row" data-masonry='{"percentPosition": true }'>
         <div class="col-12 col-sm-6 col-lg-4 mb-4">
