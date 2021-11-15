@@ -15,7 +15,7 @@
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
+      <div class="container-lg">
         <a class="navbar-brand"
           ><img
             src="/img/pdc-logo.png"
@@ -41,7 +41,7 @@
             <a class="nav-link" href="../index.html">Portada</a>
             <a class="nav-link active" aria-current="page" href="#">Deportes</a>
             <a class="nav-link" href="./rutas.html">Rutas</a>
-            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+            <a class="nav-link" href="./contacto.html">Contacto</a>
             <a href="#" class="nav-link disabled">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -85,26 +85,25 @@
         </div>
       </div>
     </nav>
-    <div class="container">
+    <div class="container-lg">
       <!-- Breadcrumb-->
-      <div class="row">
-        <div class="col">
-          <nav class="nav p-3" aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item">
-                <a href="../index.html">Portada</a>
-              </li>
-              <li class="breadcrumb-item active" aria-current="page">
-                Deportes
-              </li>
-            </ol>
-          </nav>
-        </div>
-      </div>
+      <nav
+        class="pt-3"
+        style="--bs-breadcrumb-divider: '>'"
+        aria-label="breadcrumb"
+      >
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="../index.html">Portada</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Deportes</li>
+        </ol>
+      </nav>
+
       <!-- Tarjetas de deportes-->
       <div class="row g-0">
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100">
+        <div class="col-12 col-md-6 col-lg-4 mb-3 mb-md-0">
+          <div class="card h-100 ">
             <img src="../img/buceo.jpg" alt="" class="card-img-top" />
             <div class="card-body">
               <h5 class="card-title">Buceo</h5>
@@ -119,7 +118,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-12 col-md-6 col-lg-4 mb-3 mb-md-0">
           <div class="card h-100">
             <img src="../img/parapente.jpg" alt="" class="card-img-top" />
             <div class="card-body">
@@ -134,7 +133,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-12 col-lg-4">
+        <div class="col-12 col-md-12 col-lg-4  mb-3 mb-md-0">
           <div class="card h-100">
             <img src="../img/surf.jpg" alt="" class="card-img-top" />
             <div class="card-body">
@@ -146,7 +145,7 @@
               </p>
             </div>
             <div class="card-footer text-end">
-              <small class=" text-muted">Last updated 3 mins ago</small>
+              <small class="text-muted">Last updated 3 mins ago</small>
             </div>
           </div>
         </div>
